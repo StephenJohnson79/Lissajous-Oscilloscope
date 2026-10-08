@@ -1,5 +1,7 @@
 # 李萨如示波器 · Lissajous Oscilloscope
 
+[在线体验 · Live demo](https://stephenjohnson79.github.io/Lissajous-Oscilloscope/)
+
 [中文](#中文) · [English](#english)
 
 ## 中文
