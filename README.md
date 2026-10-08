@@ -1,6 +1,6 @@
 # 李萨如示波器 · Lissajous Oscilloscope
 
-[在线体验 · Live demo](https://lissajous-sound-lab.jixiaomian20000103.chatgpt.site)
+[在线部署方法](#在线部署html) · [Deploy the HTML online](#deploy-the-html-online)
 
 [中文](#中文) · [English](#english)
 
@@ -30,7 +30,20 @@ y(t) = Ay · sin(2π · fy · t + φ)
 
 ### 使用
 
-下载仓库中的 `index.html` 后，直接用现代浏览器打开。界面、脚本、样式和鸟鸣音频均已内置，无需安装依赖或联网加载资源。麦克风需浏览器授权；建议在上方的 HTTPS 在线演示中使用。
+下载仓库中的 `index.html` 后，直接用现代浏览器打开。界面、脚本、样式和鸟鸣音频均已内置，无需安装依赖或联网加载资源。麦克风需浏览器授权；在线使用时请通过 HTTPS 访问。
+
+### 在线部署（HTML）
+
+仓库根目录的 `index.html` 是可直接发布的独立 HTML 文件。将它上传到支持 HTTPS 的静态网站托管服务，即可通过网址在线浏览，无需运行 Node.js、安装依赖或重新构建。
+
+以 GitHub Pages 为例：
+
+1. 新建一个用于部署的 GitHub 公开仓库，将本项目的 `index.html` 上传到该仓库根目录，保留文件名。
+2. 打开该仓库的 **Settings → Pages**，在 **Build and deployment → Source** 中选择 **Deploy from a branch**。
+3. 选择存放 `index.html` 的分支（通常为 `main`）和 **/ (root)** 目录，点击 **Save**。
+4. 等待部署完成，打开 Pages 设置页显示的 HTTPS 网址。麦克风输入仍需在浏览器中授予权限。
+
+更新时，用新版 `index.html` 替换部署仓库中的同名文件并提交，GitHub Pages 会重新发布。详细设置见 [GitHub Pages 官方文档](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)。
 
 ### 技术
 
@@ -64,7 +77,20 @@ Levels are expressed relative to digital full scale (FS), not physical voltage. 
 
 ### Use
 
-Download `index.html` from this repository and open it in a modern browser. The interface, scripts, styles, and birdsong audio are included in the file, with no installation or external resource downloads required. Microphone access needs browser permission; the HTTPS live demo above is recommended for this feature.
+Download `index.html` from this repository and open it in a modern browser. The interface, scripts, styles, and birdsong audio are included in the file, with no installation or external resource downloads required. Microphone access needs browser permission; use HTTPS when accessing the app online.
+
+### Deploy the HTML online
+
+The root-level `index.html` is a standalone HTML file ready to publish. Upload it to a static website host that supports HTTPS to access the app online. No Node.js runtime, dependency installation, or rebuild is required.
+
+For example, with GitHub Pages:
+
+1. Create a public GitHub repository for deployment and upload this project's `index.html` to its root, keeping the filename.
+2. Open that repository's **Settings → Pages** and select **Deploy from a branch** under **Build and deployment → Source**.
+3. Select the branch containing `index.html` (usually `main`) and the **/ (root)** folder, then click **Save**.
+4. Wait for deployment to finish and open the HTTPS URL shown in the Pages settings. Microphone input still requires browser permission.
+
+To update the app, replace `index.html` in the deployment repository with the latest version and commit it; GitHub Pages will republish it. See the [official GitHub Pages documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) for detailed settings.
 
 ### Built with
 
