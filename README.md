@@ -1,7 +1,5 @@
 # 李萨如示波器 · Lissajous Oscilloscope
 
-[在线体验 · Live demo](https://lissajous-sound-lab.jixiaomian20000103.chatgpt.site)
-
 [中文](#中文) · [English](#english)
 
 ## 中文
